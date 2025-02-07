@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tierlist</title>
+    <script type="module" src="./tierlist.js"></script>
+    <script type="module" src="./tierlist-row.js"></script>
+    <script type="module" src="./tierlist-entry.js"></script>
+  </head>
+  <body>
+    <tierlist-container></tierlist-container>
+
+    <script type="module">
+      import { TierlistEntry } from './tierlist-entry.js';
+
+      const INITIAL_DATA = [
+        'Arch',
+        'Manjaro',
+        'Mint',
+        'Ubuntu',
+        'Debian',
+        'Fedora',
+        'REL',
+        'NixOS',
+        'CentOS',
+        'Alpine',
+        'ClearOS',
+        'CachyOS',
+        'PopOS',
+        'SerpentOS',
+        'OpenSuse',
+        'Knoppix',
+        'TailOS',
+        'CubesOS',
+        'Bazzite',
+        'EndeavourOS',
+        'Limux',
+      ];
+
+      function initTierlist() {
+        INITIAL_DATA.forEach(entry => {
+          TierlistEntry
+        });
+      }
+
+      window.onload = () => initTierlist();
+    </script>
+  </body>
+</html>
